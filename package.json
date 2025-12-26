@@ -2,9 +2,10 @@
   "name": "tuhocnodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
+    "watch": "sass --watch src/resources/scss/app.scss src/public/css/app.css --watch",
+    "start": "nodemon --inspect src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +23,10 @@
   },
   "homepage": "https://github.com/trinhkhang0507/nodejs#readme",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "express-handlebars": "^8.0.3",
+    "morgan": "^1.10.1",
+    "sass": "^1.97.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"

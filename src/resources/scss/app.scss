@@ -1,1 +1,13 @@
-@import 'variables';
+.avatar-user {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* số dòng bạn muốn */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

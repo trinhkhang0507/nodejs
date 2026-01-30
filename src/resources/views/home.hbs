@@ -1,1 +1,30 @@
-<h1>Home Page</h1>
+<div class='mt-4'>
+  <div class='row'>
+    {{#each courses}}
+      <div class='col-sm-6 col-lg-4 mt-4'>
+        <div class='card h-100 mt-4' style='max-width: 20rem;'>
+          <a href='/courses/{{this.slug}}'>
+            <img src='{{this.image}}' class='card-img-top' alt='...' />
+          </a>
+
+          <div class='card-body d-flex flex-column'>
+            <a href='/courses/{{this.slug}}' class='text-decoration-none'>
+              <h5 class='card-title text-truncate w-100'>
+                {{this.name}}
+              </h5>
+            </a>
+
+            <!-- Mô tả: cắt 2 dòng -->
+            <p class='card-text description'>
+              {{this.description}}
+            </p>
+
+            <a href='#' class='btn btn-primary mt-auto'>
+              Đăng kí khóa học
+            </a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
